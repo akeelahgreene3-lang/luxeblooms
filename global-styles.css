@@ -75,10 +75,10 @@ header {
     background-color: #faf9f6;
     position: absolute;
     top: 70px;
-    right: 0;
+    left: 0px;
     width: 200px;
     padding: 15px;
-    display: none; /* hidden by default */
+    display: flexbox;
   }
 
   .nav-list.active {
