@@ -1,0 +1,281 @@
+
+
+  /* Homepage Hero */
+.home-hero {
+  text-align: left;
+  padding: 1px 20px 100px;
+  line-height: 1.2;
+  background: url("images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333333;
+  margin-top: 0px;
+  height: 355px;
+}
+
+.home-hero h1 {
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-left: 20px;
+  line-height: 1.6;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.caption {
+  margin-bottom: 70px;
+  margin-left: 20px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.home-hero h1, .home-hero a, .button-primary {
+  margin-left: 20px;
+}
+
+/* Company Introduction */
+.about-preview {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px;
+  padding-bottom: 50px;
+  background-color: #faf9f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(199,135,132,0.3);
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
+
+.about-text h2::after {
+  content: "❀❀❀";
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #f4c2c2;
+}
+
+.about-text h2::before {
+  content: "❀❀❀";
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #f4c2c2;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 2;
+  color: #333333;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.about-text {
+  flex: 2;
+}
+
+.about-preview, .about-container, .about-text, a, .button-secondary {
+  text-align: center;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+  
+}
+
+.about-image img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text, .about-image {
+    flex: none;
+    width: 100%;
+  }
+}
+
+/*Featured Collections*/
+.collections h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0 70px;
+}
+
+.collections h2::after {
+  content: "❀❀❀";
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333333;
+}
+
+.collections h2::before {
+  content: "❀❀❀";
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333333;
+}
+
+.collections {
+  background-color: #ccd5b5;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 60px;
+  overflow: auto;
+}
+
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.collection-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  text-decoration: none;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.collection-card.sympathy img {
+  object-position: top;
+}
+
+.collection-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #453f3c;
+  font-weight: bold;
+}
+
+.collection-card p {
+  font-size: 14px;
+  color: #555555;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Section: Why Choose Luxe Blooms */
+.why-choose {
+  padding: 10px 20px 60px;
+  text-align: center;
+  background-color: #faf9f6;
+  margin: 0px;
+  border-radius: 12px;
+}
+
+.why-choose h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 70px;
+}
+
+.why-choose h2::before {
+  content: "❀❀❀";
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #c1c592;
+}
+
+.why-choose h2::after {
+  content: "❀❀❀";
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #c1c592;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(107,142,92,0.3);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.feature img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #6b8e5c;
+  font-weight: bold;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #555555;
+  line-height: 1.6;
+}
+
+

@@ -1,0 +1,97 @@
+/* Request-a-Quote Page */
+  /* Quote Hero */
+.quote-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 100px 20px;
+  line-height: 1.2;
+  background: url("../forms/quote-images/quote-hero.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #faf9f6;
+  margin: 0px;
+  height: 190px;
+}
+
+.quote-hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px rgba(107, 60, 77, 0.7);
+}
+
+.quote-hero-content {
+  position: relative;
+  z-index: 1;
+  text-shadow: 4px 4px 4px rgba(107, 60, 77, 0.7);
+}
+
+.quote-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(128, 81, 82, 0.2);
+}
+
+  /* Main Content */
+/* User Info Input */
+.quote-form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12pc rgba(0,0,0,0.08);
+}
+
+.quote-form-group {
+  margin-bottom: 15px;
+}
+
+.quote-form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color:#333333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+button {
+  background: #6B8E5C;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #557046;
+}
+
+/* Error */
+.error {
+    color: #ff6b6b;
+    font-size: 14px;
+}
+
+/* Success */
+.success {
+    text-align: center;
+    color: #4cd137;
+    margin-top: 15px;
+    display: none;
+}
