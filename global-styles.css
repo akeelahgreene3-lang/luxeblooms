@@ -9,12 +9,11 @@ body {
   padding: 0;
 }
 
-       /* Header */
-header {
+/* Header */
+.header {
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  margin-bottom: 0px;
+  align-items: center;
   padding: 12px 24px 18px;
   background-color: #faf9f6; 
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -23,6 +22,7 @@ header {
   top: 0;
 }
 
+/* Logo */
 .logo-text h1 {
   font-family: 'Playfair Display', serif;
   font-size: 24px;
@@ -32,53 +32,71 @@ header {
 
 .logo-text h1::after {
   content: "❀";
-  display: inline-block;
-  margin-top: 10px;
+  margin-left: 5px;
   font-size: 18px;
   color: #f4c2c2;
 }
-
 
 /* Navigation */
 .nav-list {
   list-style: none;
   display: flex;
   gap: 40px;
-  padding: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-link {
   text-decoration: none;
-  line-height: 30px;
   padding: 6px;
   color: #333333;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
+  transition: 0.3s;
 }
 
 .nav-link:hover {
   background: #e69b97;
   color: #faf9f6;
-  transition: .6s;
+  border-radius: 6px;
 }
 
+/* Icons */
 .icons ul {
   list-style: none;
   display: flex;
   gap: 15px;
+  margin: 0;
 }
 
+/* Menu Toggle (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* 📱 MOBILE STYLES */
+/* ========================= */
 @media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
   .nav-list {
     flex-direction: column;
-    gap: 10px;
-    background-color: #faf9f6;
     position: absolute;
     top: 70px;
-    left: 0px;
-    width: 200px;
-    padding: 15px;
-    display: flexbox;
+    left: 0;
+    width: 220px;
+    background-color: #faf9f6;
+    padding: 20px;
+    gap: 15px;
+    display: none; /* hidden by default */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 0 0 12px 0;
   }
 
   .nav-list.active {

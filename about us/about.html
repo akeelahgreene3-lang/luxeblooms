@@ -21,6 +21,9 @@
             <div class="logo-text">
                 <h1>Luxe Blooms</h1> 
             </div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
             <nav>
                 <ul class="nav-list">
                     <li><a href="../homepage/homepage.html" class="nav-link">Home</a></li>
@@ -36,6 +39,12 @@
                 </ul>
             </div>
         </header>
+
+        <script>
+        function toggleMenu() {
+            document.querySelector('.nav-list').classList.toggle('active');
+        }
+        </script>
 
         <!-- About Us Section Header -->
         <section class="about-hero">

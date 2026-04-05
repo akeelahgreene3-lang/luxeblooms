@@ -21,21 +21,31 @@
       <div class="logo-text">
         <h1>Luxe Blooms</h1> 
       </div>
+
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
       <nav>
         <ul class="nav-list">
           <li><a href="homepage.html" class="nav-link">Home</a></li>
           <li><a href="../products/product.html" class="nav-link">Products</a></li>
           <li><a href="../about us/about.html" class="nav-link">About Us</a></li>
-          <li><a href="../contact us/" class="nav-link">Contact Us</a></li>
+          <li><a href="../contact us/contact.html" class="nav-link">Contact Us</a></li>
         </ul>
       </nav>
 
       <div class="icons">
         <ul>
-          <li><a href="../login/login.html"><img src="images/user.svg" width="28" height="28" alt="User Account"></a></li>
+          <li><a href="../login/login.html">
+            <img src="images/user.svg" width="28" height="28" alt="User Account"></a></li>
         </ul>
       </div>
     </header>
+
+    <script>
+    function toggleMenu() {
+      document.querySelector('.nav-list').classList.toggle('active');
+    }
+    </script>
 
     <!-- Hero Section -->
     <section class="home-hero">
@@ -65,28 +75,28 @@
       <div class="collection-grid">
 
       <!--Card 1-->
-      <a href="product.html" class="collection-card">
+      <a href="../products/product.html" class="collection-card">
         <img src="images/love.jpg" alt="Romantic Bouquet">
         <h3>Love & Romance</h3>
         <p> Elegant arrangements for weddings, anniversaries, and romatic gestures</p>
       </a>
 
       <!--Card 2-->
-      <a href="product.html" class="collection-card">
+      <a href="../products/product.html" class="collection-card">
         <img src="images/celebration.jpg" alt="Celebration Bouquet">
         <h3>Celebration & Joy</h3>
         <p>Bright blooms for birthdays, graduations, promotions, corporate events and joyful milestones </p>
       </a>
     
       <!--Card 3-->
-      <a href="product.html" class="collection-card sympathy">
+      <a href="../products/product.html" class="collection-card sympathy">
         <img src="images/sympathy.jpg" alt="Sympathy Flowers">
         <h3>Sympathy & Comfort</h3>
         <p>Thoughtful flowere to express care and support in difficult times</p>
       </a>
 
       <!--Card 4-->
-      <a href="product.html" class="collection-card">
+      <a href="../products/product.html" class="collection-card">
         <img src="images/everyday.jpg" alt="Everyday Bouquets">
         <h3>Everyday Beauty</h3>
         <p>Simple, stylish arrangements to brighten your home or workspace</p>
