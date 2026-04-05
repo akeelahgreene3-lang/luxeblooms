@@ -121,6 +121,22 @@
   color: #e69b97;
 }
 
+@media (max-width: 768px) {
+  .product-section {
+    flex-direction: column;
+  }
+
+  .product-sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .product-sidebar button {
+    display: inline-block;
+    margin: 5px;
+  }
+}
+
 /* Grid */
 .product-grid {
   flex: 1;
