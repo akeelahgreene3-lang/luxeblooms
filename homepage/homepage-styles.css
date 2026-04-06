@@ -119,6 +119,9 @@
     flex: none;
     width: 100%;
   }
+  .caption {
+    color: #ffffff;
+  }
 }
 
 /*Featured Collections*/
